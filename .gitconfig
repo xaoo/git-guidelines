@@ -1,0 +1,39 @@
+[user]
+  name = "John, Doe"
+  email = "john.doe@acme.net"
+[alias]
+  br = branch
+  ci = commit
+  cc = commit
+  # When amending a commit the author and timestamp are reset to reflect
+  # recent change of the commit
+  ca = "commit --amend --reset-author"
+  canr = "commit --amend --no-edit --reset-author"
+  cane = "commit --amend --no-edit"
+  # When rewording a commit message, the author and timestamp are preserved
+  cw = "commit --amend --only --reedit-message=HEAD"
+  co = checkout
+  dd = diff
+  dw = "diff --word-diff=color"
+  ds = "diff --stat"
+  ls = "log --decorate --stat --abbrev-commit"
+  lt = "log --decorate --graph --abbrev-commit --pretty=oneline"
+  st = status
+  pf = "push --force"
+  # Make vimdiff use ~/.vimrc when used from git
+  vimdiff = difftool -y -t vimdiff -R
+[color]
+  ui = true
+  interactive = auto
+[core]
+  autocrlf = false
+  safecrlf = false
+  editor = "vim -f"
+[merge]
+  tool = "vimdiff"
+  # Set diff3 style to confict markers to show the orignial
+  conflictstyle = "diff3"
+[push]
+  default = simple
+[rebase]
+  autosquash = true
