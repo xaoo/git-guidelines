@@ -1,5 +1,5 @@
 # **GitOps Documentation**
-## <font color='green'>**A comprehensive mindset for Atos contributors.**</font>
+## <font color='green'>**A comprehensive mindset for any contributors.**</font>
    > 1. Remember the [guidelines](#guidelines)!
    > 2. Understand and use repository [workflow](#gitworkflow)!
    > 3. Never push branch without a [naming convention](#naming-conventions) in place!
@@ -13,8 +13,8 @@
    > 11. [Authors](#authors)
 
 # <a name="guidelines"></a> Guidelines
-When contributing to any Atos repository, please first discuss the change you wish to make via issue, email, 
-or any other method with the owners of Atos repository before making a change.
+When contributing to any any repository, please first discuss the change you wish to make via issue, email, 
+or any other method with the owners of any repository before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
