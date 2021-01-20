@@ -10,6 +10,7 @@
   ca = "commit --amend --reset-author"
   canr = "commit --amend --no-edit --reset-author"
   cane = "commit --amend --no-edit"
+  caned = "commit --amend --no-edit --date=now"
   # When rewording a commit message, the author and timestamp are preserved
   cw = "commit --amend --only --reedit-message=HEAD"
   co = checkout
