@@ -5,6 +5,9 @@
   br = branch
   ci = commit
   cc = commit
+  # Get logs with oneline param, instead of git log -5 --oneline
+  # We can use <git lo 5> l - log and o - --oneline
+  lo = !sh -c 'git log -$1 --oneline' - 
   # When amending a commit the author and timestamp are reset to reflect
   # recent change of the commit
   ca = "commit --amend --reset-author"
@@ -21,6 +24,10 @@
   lt = "log --decorate --graph --abbrev-commit --pretty=oneline"
   st = status
   pf = "push --force"
+  # When creating a new branch, push the new branch automatically with the current branch name!
+  # Using functions
+  pn = "!f() { git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD); }; f"
+  pnf = "!f() { git push --force --set-upstream origin $(git rev-parse --abbrev-ref HEAD); }; f"
   # Make vimdiff use ~/.vimrc when used from git
   vimdiff = difftool -y -t vimdiff -R
 [color]
